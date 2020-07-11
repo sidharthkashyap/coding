@@ -1,0 +1,157 @@
+
+#include <iostream>
+
+
+using namespace std;
+
+
+float celi()
+    
+{
+    float cel;
+
+     cout<<"enter celcius temp";
+ 
+     cin>>cel;
+     
+     float kel,rem,fah;
+  
+     kel=cel+273;
+     
+     rem=(4*cel)/5;
+      
+     fah=(9*cel + 160)/5;
+ 
+     cout<<kel<<endl;
+
+     cout<<rem<<endl;
+
+     cout<<fah<<endl;
+ 
+   }
+    
+   
+ float keli()
+ 
+   {
+       
+  float kel;
+       
+  cout<<"enter kelvin temp";
+   
+  cin>>kel;
+     
+  float cel,rem,fah;
+ 
+  cel=kel-273;
+ 
+  rem=(4*kel - 1092)/5;
+ 
+  fah=(9*kel - 2297)/5;
+ 
+  cout<<cel<<endl;
+   
+  cout<<rem<<endl;
+  
+  cout<<fah<<endl;
+ 
+   }
+    
+   
+ float reme()
+  
+  {
+        
+float rem;
+    
+cout<<"enter remer temp";
+ 
+cin>>rem;
+     
+float cel,kel,fah;
+   
+cel=(5*rem)/4;
+      
+kel=(5*rem + 1092)/4;
+ 
+fah=(9*rem+128)/4;
+
+cout<<cel<<endl;
+   
+cout<<kel<<endl;
+    
+cout<<fah<<endl;
+ 
+   }
+    
+   
+ float fahe()
+    {
+    
+  float fah;
+   
+  cout<<"enter fah.temp";
+  
+  cin>>fah;
+      
+  float cel,rem,kel;
+  
+  cel=(5*fah-160)/9;
+ 
+  kel=(5*fah-2297)/9;
+ 
+  rem=(4*fah)/9;
+   
+  cout<<cel<<endl;
+   
+  cout<<rem<<endl;
+   
+  cout<<kel<<endl;
+  
+  }
+    
+    
+int main()
+{
+        int a;
+   
+     cout<<".......MENU.......";
+        cout<<"1.celsius 2.kel 3.rem 4.fah";
+
+        while(a!=5)
+    
+    {
+           
+ switch(a)
+       
+
+     {
+            
+ case 1 : celi();
+    
+          break;
+               
+ case 2 : keli();
+  
+          break;
+        
+ case 3 : reme();
+ 
+          break;
+             
+ case 4 : fahe();
+       
+          break;
+                
+ default : cout<<"invalid selection";
+            }
+          
+  cout<<"selection is";
+          
+  cin>>a;
+      
+  }
+    
+return 0;
+  
+ }
